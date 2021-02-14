@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 
+#message_title {font-size: 18px;color: #4e66f8; padding: 25px 5px 10px; width: 30%;float: left; }
+.top_buttons {width: 70%;float: left; padding: 20px 15px 10px;display: block;height: auto;}
+.buttons button {float: right; color: #fff; background: #4e66f8; height: 30px; padding: 0 12px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; margin: 0 5px;} */
+
+/*메시지보내기 양식(message_form.php)*/
+#message_box{width: 1000px; margin: 0 auto; padding:10px 10px 10px;margin: 20px auto 20px; border-radius: 10px; background: #f8f9fa; padding-bottom: 60px;}
+
+.title_outerbox{width: 100%;height: 60px; margin-bottom: 20px; border-bottom: 1px solid #4e66f8;}
+#message_box h2 ,#message_form h2{font-size: 18px;color: #4e66f8; padding: 25px 5px 10px; width: 30%;float: left; }
+#message_box .top_buttons, #message_form .top_buttons{width: 70%;float: left; padding: 20px 15px 10px;display: block;height: auto;}
+#message_box .top_buttons li , #message_form .top_buttons li{float: right; }
+#message_form .top_buttons li a{display: block; color: #fff; background: #4e66f8; height: 30px; padding: 0 12px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; margin: 0 5px; }
+#message_box .top_buttons li button , #message_form .top_buttons li button{float: right; color: #fff; background: #4e66f8; height: 30px; padding: 0 12px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; margin: 0 5px;}
+
+
+#write_msg{padding-top: 20px;}
+#write_msg ul{border-bottom: 1px solid #333;}
+#write_msg ul li{padding-bottom: 10px; font-size: 0;}
+#write_msg ul li .label{display: inline-block; vertical-align: top; width: 160px; padding: 0 10px;}
+#write_msg ul li .label label{font-size: 16px; color:#333; line-height: 36px;}
+
+#write_msg ul li .input{display: inline-block; vertical-align: top; width: calc(100% - 160px); padding: 0 10px;}
+#write_msg ul li .input input{width: 100%; height: 34px; border:1px solid #2939a0; border-radius: 4px; font-size: 16px; color:#2939a0;}
+#write_msg ul li .input p{line-height: 36px;font-size: 16px; color:#2939a0;}
+
+#write_msg ul li .input textarea{width: 100%; height: 200px; border: 1px solid #2939a0; border-radius:4px; font-size: 16px; color:#2939a0; resize:none;margin-right: 20px;}
+
+.send_btn{display: block; float: right; color: #fff; background: #4e66f8; height: 30px; padding: 0 12px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; margin: 0 5px;margin:20px}
+
+/*메시지 리스트(message_box.php)*/
+#message_list{padding: 10px 0; margin: 20px auto;}
+#message_list #message{border-top:1px solid #777;width: 95%;margin: 0 auto;}
+#message_list #message li{border-bottom: 1px solid #4e66f8; font-size: 0;}
+
+#message_list #message li span{display: inline-block; vertical-align: top; font-size: 14px; line-height: 1; color:#2939a0; padding: 10px 5px;}
+#message_list #message li span a{color:#2939a0;}
+#message_list #message li span a:hover{color:#4e66f8;}
+
+#message_list #message li span.field_1{width: 60px; text-align: center;}
+#message_list #message li span.field_2{width: calc(100% - 460px);}
+#message_list #message li span.field_3{width: 200px; text-align: center;}
+#message_list #message li span.field_4{width: 200px; text-align: center;}
+
+#message_list #message li:first-child{border-bottom:2px solid #777;}
+#message_list #message li:first-child span{font-weight: bold; color:#2939a0; text-align: center;}
+
+
+#page_num{text-align: center; padding: 10px 0; font-size: 0;}
+#page_num li{display: inline-block; margin: 0 5px; font-size: 13px; color:#2939a0; vertical-align: middle;}
+#page_num li a{color:#777;}
+#page_num li .cur_page{color:#4e66f8; font-weight: bold; font-size: 15px;}
+#page_num li:hover a{color:#4e66f8;}
+
+
+.msg_link{text-align: right; padding: 10px 0; font-size: 0;}
+.msg_link li{display: inline-block; margin: 0 5px; font-size: 14px;}
+/* .msg_link li button{padding: 10px 20px; border:none; background-color: #4e66f8; color:#fff; border-radius: 4px; cursor: pointer;}
+.msg_link li:hover button{background-color: #4e66f8; color:#fff;} */
+
+
+
+/*메시지 상세보기(message_view.php)*/
+#message_view{padding: 0 0 10px; width: 95%; margin: 0 auto;}
+#message_view li{border-bottom: 1px solid #ccc; padding: 10px 0; font-size: 14px;}
+#message_view li:last-child{border-bottom: 1px solid #4e66f8;}
+
+#message_view li span{display: inline-block; width: 65px; font-weight: bold; color: #2939a0;}

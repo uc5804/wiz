@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/*스터디 공통*/
+#study_box{width: 1200px; margin: 0 auto; padding: 40px 0;}
+/* #study_box h2{border-bottom: 1px solid #ccc; font-size: px; padding-bottom: 10px;width: 100%;} */
+
+#study_box .buttons{padding: 20px 0; text-align: right; font-size: 0;}
+#study_box .buttons li{display: inline-block; margin: 0 5px;}
+#study_box .buttons li button{padding: 10px 20px; font-size: 16px; border:none; border-radius:4px; background-color: #edefed; cursor: pointer;}
+#study_box .buttons li:hover button{background-color: #4e66f8; color:#fff;}
+
+/*스터디 등록(study_form.php)*/
+/*스터디 등록 폼*/
+section {width: 1200px; margin: 0 auto;}
+#study_box{width: 1000px; height: auto; margin: 0 auto; padding: 20px 0; background: #f8f9fa;margin: 30px 0; border-radius: 10px;}
+#study_box h2{border-bottom: 1px solid #4e66f8; font-size: 18px; padding-bottom: 10px;padding-left: 25px; color: #2939a0;width: 100%;}
+
+
+
+/*스터디 등록(study_form.php)*/
+#study_box #study_form{border-bottom: 1px solid #4e66f8; padding-top: 10px; height: 700px;}
+#study_box #study_form li{padding: 10px 25px; font-size: 0;}
+#study_box #study_form li{width: 50%;float: left;}
+/* #study_box #study_form li.leader{width: 35%;}*/
+#study_box #study_form li.date{padding: 10px 0;} 
+#study_box #study_form li.date>div:first-child {width: 15%;}
+#study_box #study_form li.date>div:last-child {width: 35%;}
+#study_box #study_form li.detail {width: 100%;}
+
+
+
+#study_box #study_form li > div{display: inline-block; font-size: 14px; color:#2939a0; vertical-align: top; padding: 0 10px;}
+
+#study_box #study_form li > div.label{width: 100px;}
+#study_box #study_form li > div.label label{width: 100%;line-height: 36px; font-weight: bold;}
+
+#study_box #study_form li > div.input{width: calc(100% - 100px); position: relative;}
+
+#study_box #study_form li > div.input input{width: 100%; height: 30px; border:1px solid #ccc; border-radius:4px; background: #fff;}
+#study_box #study_form li > div.input p{line-height: 30px;}
+
+#study_box #study_form li > div.input textarea{width: 100%; height: 360px; resize:none; border: 1px solid #ccc; border-radius:4px; padding: 8px 0;}
+
+#study_box #study_form li > div.input input[type='file']{border:none;width: auto; outline:none; cursor: pointer; position: absolute; top:7px;}
+
+
+#study_box .buttons{padding: 20px 0; text-align: right; font-size: 0;}
+#study_box .buttons li{display: inline-block; margin: 0 10px;}
+#study_box .buttons li button{padding: 5px 15px; font-size: 16px; border:none; border-radius:4px; background-color: #edefed; cursor: pointer;}
+#study_box .buttons li:hover button{background-color: #4e66f8; color:#fff;}
+
+
+/*스터디 리스트(study_list.php)*/
+
+.wrap {width: 1200px;margin: 0 auto;height: auto;}
+section {width: 1200px;height: auto; margin: 0 auto 20px;}
+/* cont1 */
+section{width: 1200px;height: auto;}
+/* section> div> h3{padding-top: 10px;font-size: 15px; color:#333 ;display: block;width: 50%; float: left; margin-bottom: 70px;} */
+/* section> div> a{ float: right;padding-top: 6px;padding-right: 20px; color: #4e66f8;} */
+.title_button_outerbox {width: 100%;height: 60px; margin-bottom: 20px; border-bottom: 1px solid #4e66f8;}
+#study_title {font-size: 18px;color: #4e66f8; padding: 25px 5px 10px; width: 30%;float: left; }
+.buttons {width: 70%;float: left; padding: 20px 15px 10px;display: block;height: auto;}
+.buttons button {float: right; color: #fff; background: #4e66f8; height: 30px; padding: 0 12px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; margin: 0 5px;}
+
+/* study_list_tab(탭,버튼만) */
+#content{width: 1200px; height: auto; margin: 0 auto; font-size: 0;}
+#content article {width: 1200px; height: 100%; display: inline-block; vertical-align: top; }
+
+#content article.tab{text-align: center;}
+#content article.tab ul.tab_btn li{width: calc(100% / 3); display: inline-block; vertical-align: top;}
+#content article.tab ul.tab_btn li a{display: block; font-size: 18px; line-height: 36px; color:#555;text-decoration: none; border-top-left-radius:10px ; border-top-right-radius: 10px ; background: #fff; border: 2px solid #eee; border-bottom: 1px solid #adb7fa; box-sizing: border-box;}
+#content article.tab ul.tab_btn li.active a{color:#4e66f8;
+    background: #F8F9FA;
+    border: 1px solid #4e66f8;text-decoration: none; border-bottom: 2px solid #F8F9FA;}
+
+#content article.tab .tab_btn{position: relative;}
+#content article.tab .tab_btn > div{position: absolute; top:0; left:0; width: 100%; display: none;}
+#content article.tab .tab_btn > div.active{display: block;}
+#content article.tab .tab_btn div ul{width: 100%;text-align: center; height: 46px;;background: linear-gradient(180deg, rgba(248,249,250,1) 0%, rgba(251,251,251,1) 100%);}
+#content article.tab .tab_btn div ul li{display: inline-block;  margin: 0 5px; }
+#content article.tab .tab_btn div ul li a{display: block; width: 100%; height: 100px; background-size: cover; background-position: 50% 50%;}
+#content article.tab .tab_btn div.subject_btn ul li {}
+#content article.tab .tab_btn> div ul li button{ height: 28px;  border-radius: 14px; background: #fff; border: 1px solid #4e66f8; padding: 0 10px 0 10px; margin: 9px 0 9px;}
+#content article.tab .tab_btn> div ul li button:hover{background: #4e66f8; color: #fff;}
+#content article.tab .tab_btn> div ul li button.active{background: #4e66f8; color: #fff;}
+
+
+
+
+
+/* list_s_frame */
+section .s_frame{width: 1200px;margin: 0 auto; height: auto; padding: 70px 10px 0; display: flex; flex-wrap: wrap; justify-content: flex-start; flex-direction: row; align-items: flex-start; background: #fbfbfb; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;}
+section .s_frame .s_box{width: calc(25% - 20px); height: auto; margin: 0 10px 20px; background: #fff; border:none ;border-radius:5px; background: #f8f9fa; box-shadow: 0 0 4px #b6bff8; cursor: pointer;}
+section .s_frame .s_box:hover {box-shadow: 0 0 10px #b6bff8;}
+section .s_frame .s_box .s_img{width: 100%;height: 150px;background: #eee;border-top-left-radius:5px ;border-top-right-radius:5px ;background-size: cover; background-position: 50% 50%;overflow: hidden;}
+section .s_frame .s_box .s_img img {width: 100%;height: 100%; background-size: cover; background-position: 50% 50%;}
+section .s_frame .s_box:hover .s_img img {transform: scale(1.05); transition: scale 1s;}
+
+section .s_frame .s_box .s_info{padding: 7px;position: relative;}
+section .s_frame .s_box .s_info .s_maintxt{ border-bottom: 1px solid #ddd; padding-bottom: 5px; position: relative;}
+section .s_frame .s_box .s_info .s_maintxt p{font-size: 14px; padding-bottom: 3px; color: #4e66f8; width: 85%;overflow: hidden; white-space: nowrap; text-emphasis: none;}
+section .s_frame .s_box .s_info .s_maintxt p span:nth-child(1){display: block;width: auto;float: left;}
+section .s_frame .s_box .s_info .s_maintxt p span:nth-child(2){color: #333; display: block;width: 70%;float: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+section .s_frame .s_box .s_info .s_maintxt a {position: absolute; top:0px;right:0; font-size: 12px; color: #fff;display: block; width: 55px;height: 22px;background: #8391eb;line-height: 22px;text-align: center;border-radius: 2px; cursor: pointer;}
+section .s_frame .s_box .s_info .s_etc {padding: 3px 0px;}
+section .s_frame .s_box .s_info .s_etc > span{font-size: 13px;}
+/* section .s_frame .s_box .s_info .s_etc > span.r_date {float: left;} */
+section .s_frame .s_box .s_info .s_etc > span.s_date {padding-left: 12px;}
+section .s_frame .s_box .s_info .s_etc > span.fav {float: right;}
+section .s_frame .s_box .s_info .s_etc > span span{}
+section .s_frame .s_box .s_info .btm_btn {text-align: center; padding-top: 5px; padding-bottom: 3px;}
+section .s_frame .s_box .s_info button {border: none; color: #fff; background: #4e66f8; border-radius: 2px;font-size: 13px; padding: 2px 10px; }
+
+
+
+/*스터디 상세페이지(study_view.php)*/
+/* study_view */
+.title {border-bottom: 1px solid #4e66f8; width: 1200px;height: 60px;padding: 0;}
+#view {width: 1200px; margin: 20px auto; height: auto; background: #eee;}
+#view #registered_form {width: 60%;height: 700px; background: #fff;float: left;/* background-image: url(../img/file_back.jpg);*/ background-size: cover;  box-shadow: 0 0 4px #4e66f8; border-radius: 5px;position: relative;}
+#view #registered_form .bar_box{width: 100%; height: auto; background: #6069a4; height: 40px; border-top-left-radius: 5px;border-top-right-radius: 5px; }
+
+
+#view #registered_form .arrow {position: absolute;right: -10%; top: 20px;font-size: 30px; color: #4e66f8;}
+
+
+#view #registered_form .file{width: 95%;height: 95%; background: #f8f9fa; margin-top: -15px; margin-left: 2.5%;padding: 20px; padding-top: 40px; border-radius: 4px; }
+#view #registered_form .file .paper{width: 100%;height: 100%;background: #ffffff; padding:20px; text-align: center;}
+#view #registered_form .file .paper h4{color:#4e66f8 ; width: 100%;height: 30px; border-bottom: 1px solid #4e66f8;font-size: 20px; }
+#view #registered_form .file .paper .content{}
+#view #registered_form .file .paper .content ul{padding-top: 60px;text-align-last: left; padding-left:10px;}
+#view #registered_form .file .paper .content ul li{height: 40px;}
+#view #registered_form .file .paper .content ul li p{width: 100%;}
+#view #registered_form .file .paper .content ul li p span:first-child{float: left; color: #444; width: 130px; display: block;}
+#view #registered_form .file .paper .content ul li p span:first-child i{color: #4e66f8; margin-right: 5px;}
+#view #registered_form .file .paper .content ul li p span:last-child {float: left; width: 300px;}
+/* view .s_frame */
+
+#view .s_box{	
+	width: calc(30% - 20px); height: auto; margin: 0 10px 20px; background: #fff; border:none ;border-radius:5px; background: #f8f9fa; box-shadow: 0 0 4px #4e66f8;float: right;
+	}
+#view .s_box .s_img{width: 100%;height: 170px;background: #eee;border-top-left-radius:5px ;border-top-right-radius:5px ;background-size: cover; background-position: 50% 50%;}
+#view .s_box:nth-child(1) .s_img { background-image: url(../img/s_01.jpg);}
+/* #view .s_box:nth-child(2) .s_img { background-image: url(../img/s_02.jpg);}
+#view .s_box:nth-child(3) .s_img{ background-image: url(../img/s_03.jpg);}
+#view .s_box:nth-child(4) .s_img { background-image: url(../img/s_04.jpg);} */
+
+#view .s_box .s_info{padding: 10px;position: relative;}
+#view .s_box .s_info .s_maintxt{ border-bottom: 1px solid #ddd; padding-bottom: 5px; position: relative;}
+#view .s_box .s_info .s_maintxt p{font-size: 15px; padding-bottom: 3px; color: #4e66f8; display: block;height: 30px;}
+#view .s_box .s_info .s_maintxt p span{color: #333;}
+#view .s_box .s_info .s_maintxt a {position: absolute; top:0px;right:0; font-size: 14px; color: #fff;display: block; width: 55px;height: 22px;background: #8391eb;line-height: 22px;text-align: center;border-radius: 2px;}
+#view .s_box .s_info .s_etc {padding: 3px 0px;}
+#view .s_box .s_info .s_etc > span{font-size: 14px;}
+/* section .cont1 .s_frame .s_box .s_info .s_etc > span.r_date {float: left;} */
+#view .s_box .s_info .s_etc > span.s_date {padding-left: 12px;}
+#view .s_box .s_info .s_etc > span.fav {float: right;}
+#view .s_box .s_info .s_etc > span span{}
+#view .s_box .s_info .btm_btn {text-align: center; padding-top: 5px; padding-bottom: 3px;}
+#view .s_box .s_info button {border: none; color: #fff; background: #4e66f8; border-radius: 2px;font-size: 14px; padding: 2px 10px; width: 45%;float: left; }
+#view .s_box .s_info .button {display: flex; justify-content: space-around;border-top: 1px solid #ccc; padding-top: 10px;}
+#view .s_box .s_info .button button {padding: 8px; font-size: 15px; border-radius: 4px;cursor: pointer;}
+#view .s_box .s_info button:first-child {background: #2939a0;}
+
+.frame{width:1200px; height:400px; margin:40px auto; font-size:0;position: relative;}
+/* .frame>div{	width:80%;height: 100%;	display:inline-block;} */
+#map {width:100%; height: 100%; border-radius: 10px;}
+#map-info {width: 50%;height: 40px;position: absolute;left: 50%; top: 0;transform: translateX(-50%); background: rgba(255,255,255,0.75); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; text-align: center;}
+#map-info h3 {color: #4e66f8;  font-size: 25px;width:auto; padding-right: 20px; display: inline-block;}
+#map-info span {color: #4e66f8;font-size: 20px;display: inline-block; width: auto;}
+
+html, body {height: 100%;margin: 0;padding: 0;}
+
+
+
+
+

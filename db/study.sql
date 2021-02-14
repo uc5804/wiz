@@ -1,0 +1,20 @@
+create table study(
+    num int not null auto_increment,
+    id char(20) not null,
+    name char(20) not null,
+    region char(50) not null,
+    s_location char(150) not null,
+    subject char(150) not null,
+    summary char(150) not null,
+    content char(200) not null,
+    mem_num int not null,
+    fav int not null,
+    hit int not null,
+    regist_day char(20) not null,
+    close_day char(20) not null,
+    start_day char(20) not null,
+    file_name char(200),
+    file_type char(50),
+    file_copied char(50),
+    primary key(num)
+) charset=utf8;

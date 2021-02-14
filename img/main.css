@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+*{box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+html, body {margin: 0;padding: 0;}
+header, section, article, aside, nav, main, footer {display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after {content: ""; display: block; clear: both;}
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+ul, ol {list-style: none; margin: 0;padding: 0;}
+a {text-decoration: none;}
+.clear {clear: both;}
+
+
+
+nav {width: 100%;height: 60px; background: #fff;}
+nav .wrap{width: 1200px;margin: 0 auto; height: 60px; background: #fff;}
+nav .wrap .logo{float: left;width: 150px;}
+nav .wrap .logo a{font-size: 35px;color: #4e66f8;}
+
+nav .wrap .search {float: left;width: 450px;padding: 15px 0 15px 0;}
+nav .wrap .search input{height: 30px;width: 200px;border-radius: 3px; border: none;background: #eee;}
+nav .wrap .search button{height: 30px;background: #4e66f8; border: none; border-radius: 3px;color: #fff; padding-left: 7px;}
+nav .wrap .search button i{color: #fff;padding-left: 5px;}
+
+nav .wrap .nav {float: left;padding: 20px 0 15px 0;}
+nav .wrap .nav ul{}
+nav .wrap .nav ul li{float: left;}
+nav .wrap .nav ul li a{display: block; width: 90px;font-size: 14px;color: #4e66f8;}
+
+nav .wrap .user {float: right;padding: 20px 0 15px 0;}
+nav .wrap .user .login{font-size: 13px;}
+nav .wrap .user p{color: #4e66f8;font-weight: bold;}
+
+
+/*메인 페이지 콘텐츠 파트*/
+#main_content{width: 1200px; margin: 0 auto; padding: 40px 0; font-size: 0;}
+#main_content > div{display: inline-block; vertical-align: top; font-size: 14px; padding: 0 10px;}
+#main_content .notice{width: calc(100% / 3 * 2);} /*66.66%*/
+#main_content .member_rank{width: calc(100% / 3);} /*33.33%*/
+
+#main_content > div > h2{padding-bottom: 20px; border-bottom: 1px solid #ccc; color:#555; font-size: 20px;}
+#main_content > div > ul{padding: 10px 0;}
+#main_content > div > ul > li{font-size: 0;}
+#main_content > div > ul > li > span{display: inline-block; font-size: 14px; padding: 6px 10px; color:#777; vertical-align: middle;}
+
+#main_content > div > ul > li > span > a{color:#777;}
+#main_content > div > ul > li > span > a:hover{color:#21bda1;}
+
+#main_content > div > ul > li:nth-child(odd){background-color: #eee;}
+
+#main_content > div > ul > li > span.field1{width: calc(100% - 300px); text-overflow: ellipsis; white-space:nowrap; overflow: hidden;}
+#main_content > div > ul > li > span.field2{width: 160px; text-align: center;}
+#main_content > div > ul > li > span.field3{width: 140px; text-align: right;}
+
+#main_content > div > ul > li > span.mem1{width: 40px; text-align: left;}
+#main_content > div > ul > li > span.mem2{width: calc((100% - 40px) / 3);text-align: center;}
+#main_content > div > ul > li > span.mem3{width: calc((100% - 40px) / 3);text-align: center;}
+#main_content > div > ul > li > span.mem4{width: calc((100% - 40px) / 3); text-align: right;}
+
+
+#top_btn {width: 60px; position: fixed;right: 80px;bottom: 20px;z-index: 5; text-align: center;}
+#top_btn p {color: #4e66f8;}
+
